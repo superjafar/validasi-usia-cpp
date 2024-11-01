@@ -1,0 +1,115 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string user, pass;
+
+    cout << "Masukan Username = ";
+    cin >> user;
+    cout << "Masukan Password = ";
+    cin >> pass;
+
+    cout << endl;
+
+    if (user == "Kelompok") {
+        if (pass == "7") {
+            // full source code
+            string nama1, nim1, nama2, nim2, nama3, nim3, prodi;
+            int usia, menu1, menu2;
+
+            cout << "KELOMPOK 7" << endl;
+            cout << "PROGRAM STUDI = ";
+            cin >> prodi;
+
+            cout << endl;
+
+            cout << "NAMA ANGGOTA 1 = ";
+            cin >> nama1;
+            cout << "NIM  ANGGOTA 1 = ";
+            cin >> nim1;
+
+            cout << endl;
+
+            cout << "NAMA ANGGOTA 2 = ";
+            cin >> nama2;
+            cout << "NIM  ANGGOTA 2 = ";
+            cin >> nim2;
+
+            cout << endl;
+
+            cout << "NAMA ANGGOTA 3 = ";
+            cin >> nama3;
+            cout << "NIM  ANGGOTA 3 = ";
+            cin >> nim3;
+
+            cout << endl;
+
+            cout << "BERAPA USIAMU = ";
+            cin >> usia;
+
+            cout << endl;
+
+            if (usia >= 15 && usia <= 19) {
+                cout << "APA YANG ANDA LAKUKAN?" << endl;
+                cout << "1. SMA." << endl;
+                cout << "2. SMK." << endl;
+                cout << "MASUKAN PILIHAN ANDA: ";
+                cin >> menu1;
+
+                cout << endl;
+
+                if (menu1 == 1){
+                    cout << "ANDA SEORANG SISWA SMA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else if (menu1 == 2 ){
+                    cout << "ANDA SEORANG SISWA SMK." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else {
+                    cout << "PILIHAN TIDAK VALID." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                }
+            } else if (usia >= 20 && usia <= 25) {
+                cout << "APA YANG ANDA LAKUKAN?" << endl;
+                cout << "1. KULIAH." << endl;
+                cout << "2. KERJA." << endl;
+                cout << "MASUKAN PILIHAN ANDA: ";
+                cin >> menu2;
+
+                cout << endl;
+
+                if (menu2 == 1){
+                    cout << "ANDA SEORANG MAHASISWA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else if (menu2 == 2 ){
+                    cout << "ANDA SEORANG PEKERJA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else {
+                    cout << "PILIHAN TIDAK VALID." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                }
+            } else {
+                cout << "INPUT USIA HARUS DIANTARA 15 - 25 TAHUN" << endl;
+                cout << endl;
+                cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+            }
+        } else {
+            cout << "Password tidak valid." << endl;
+            cout << endl;
+            cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+        }
+    } else {
+        cout << "Username atau pengguna tidak valid" << endl;
+        cout << endl;
+        cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+    }
+
+    return 0;
+}
