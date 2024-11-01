@@ -5,8 +5,8 @@ using namespace std; // Menggunakan namespace std agar bisa langsung menulis cou
 int main() // Fungsi utama dari program yang dijalankan pertama kali
 {
     string user, pass; // Mendeklarasikan variabel  user  dan  pass  untuk menyimpan username dan password
-	string nama1, nim1, nama2, nim2, nama3, nim3, prodi; // Mendeklarasikan variabel untuk data anggota kelompok dan program studi
-	int usia, menu1, menu2; // Mendeklarasikan variabel usia dan menu1  serta  menu2  untuk opsi pilihan
+    string nama1, nim1, nama2, nim2, nama3, nim3, prodi; // Mendeklarasikan variabel untuk data anggota kelompok dan program studi
+    int usia, menu1, menu2; // Mendeklarasikan variabel usia dan menu1  serta  menu2  untuk opsi pilihan
 
     cout << "Masukan Username = "; // Menampilkan pesan untuk memasukkan username
     cin >> user; // Menerima input username dari pengguna
