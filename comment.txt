@@ -1,0 +1,114 @@
+#include <iostream> // Mengimpor library untuk input-output standar di C++
+
+using namespace std; // Menggunakan namespace std agar bisa langsung menulis cout, cin, dll., tanpa "std::"
+
+int main() // Fungsi utama dari program yang dijalankan pertama kali
+{
+    string user, pass; // Mendeklarasikan variabel  user  dan  pass  untuk menyimpan username dan password
+	string nama1, nim1, nama2, nim2, nama3, nim3, prodi; // Mendeklarasikan variabel untuk data anggota kelompok dan program studi
+	int usia, menu1, menu2; // Mendeklarasikan variabel usia dan menu1  serta  menu2  untuk opsi pilihan
+
+    cout << "Masukan Username = "; // Menampilkan pesan untuk memasukkan username
+    cin >> user; // Menerima input username dari pengguna
+    cout << "Masukan Password = "; // Menampilkan pesan untuk memasukkan password
+    cin >> pass; // Menerima input password dari pengguna
+
+    cout << endl; // Menambahkan baris kosong
+
+    if (user == "Senin") { // Memeriksa apakah username yang dimasukkan adalah "Senin"
+        if (pass == "Ceria") { // Memeriksa apakah password yang dimasukkan adalah "Ceria"
+
+            cout << "KELOMPOK 7" << endl; // Menampilkan nama kelompok
+            cout << "PROGRAM STUDI = "; // Menampilkan pesan untuk memasukkan program studi
+            cin >> prodi; // Menerima input program studi
+
+            cout << endl; // Menambahkan baris kosong
+
+            cout << "NAMA ANGGOTA 1 = "; // Menampilkan pesan untuk nama anggota 1
+            cin >> nama1; // Menerima input nama anggota 1
+            cout << "NIM  ANGGOTA 1 = "; // Menampilkan pesan untuk NIM anggota 1
+            cin >> nim1; // Menerima input NIM anggota 1
+
+            cout << endl; // Menambahkan baris kosong
+
+            cout << "NAMA ANGGOTA 2 = "; // Menampilkan pesan untuk nama anggota 2
+            cin >> nama2; // Menerima input nama anggota 2
+            cout << "NIM  ANGGOTA 2 = "; // Menampilkan pesan untuk NIM anggota 2
+            cin >> nim2; // Menerima input NIM anggota 2
+
+            cout << endl; // Menambahkan baris kosong
+
+            cout << "NAMA ANGGOTA 3 = "; // Menampilkan pesan untuk nama anggota 3
+            cin >> nama3; // Menerima input nama anggota 3
+            cout << "NIM  ANGGOTA 3 = "; // Menampilkan pesan untuk NIM anggota 3
+            cin >> nim3; // Menerima input NIM anggota 3
+
+            cout << endl; // Menambahkan baris kosong
+
+            cout << "BERAPA USIAMU = "; // Menampilkan pesan untuk memasukkan usia
+            cin >> usia; // Menerima input usia
+
+            cout << endl; // Menambahkan baris kosong
+
+            if (usia >= 15 && usia <= 19) { // Mengecek apakah usia di antara 15-19 tahun
+                cout << "APA YANG ANDA LAKUKAN?" << endl;
+                cout << "1. SMA." << endl; // Opsi untuk siswa SMA
+                cout << "2. SMK." << endl; // Opsi untuk siswa SMK
+                cout << "MASUKAN PILIHAN ANDA: ";
+                cin >> menu1; // Menerima input pilihan
+
+                cout << endl; // Menambahkan baris kosong
+
+                if (menu1 == 1){ // Mengecek apakah pilihan adalah 1 (SMA)
+                    cout << "ANDA SEORANG SISWA SMA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else if (menu1 == 2 ){ // Mengecek apakah pilihan adalah 2 (SMK)
+                    cout << "ANDA SEORANG SISWA SMK." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else { // Menangani pilihan yang tidak sesuai
+                    cout << "PILIHAN TIDAK VALID." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                }
+            } else if (usia >= 20 && usia <= 25) { // Mengecek apakah usia di antara 20-25 tahun
+                cout << "APA YANG ANDA LAKUKAN?" << endl;
+                cout << "1. KULIAH." << endl; // Opsi untuk mahasiswa
+                cout << "2. KERJA." << endl; // Opsi untuk pekerja
+                cout << "MASUKAN PILIHAN ANDA: ";
+                cin >> menu2; // Menerima input pilihan
+
+                cout << endl; // Menambahkan baris kosong
+
+                if (menu2 == 1){ // Mengecek apakah pilihan adalah 1 (Kuliah)
+                    cout << "ANDA SEORANG MAHASISWA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else if (menu2 == 2 ){ // Mengecek apakah pilihan adalah 2 (Kerja)
+                    cout << "ANDA SEORANG PEKERJA." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                } else { // Menangani pilihan yang tidak sesuai
+                    cout << "PILIHAN TIDAK VALID." << endl;
+                    cout << endl;
+                    cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+                }
+            } else { // Menangani usia di luar rentang 15-25 tahun
+                cout << "INPUT USIA HARUS DIANTARA 15 - 25 TAHUN" << endl;
+                cout << endl;
+                cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+            }
+        } else { // Menangani jika password tidak sesuai
+            cout << "Password tidak valid." << endl;
+            cout << endl;
+            cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+        }
+    } else { // Menangani jika username tidak sesuai
+        cout << "Username atau pengguna tidak valid" << endl;
+        cout << endl;
+        cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
+    }
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan bahwa program selesai dengan sukses
+}
