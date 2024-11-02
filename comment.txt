@@ -5,7 +5,7 @@ using namespace std; // Menggunakan namespace std agar bisa langsung menulis cou
 int main() // Fungsi utama dari program yang dijalankan pertama kali
 {
     string user, pass; // Mendeklarasikan variabel  user  dan  pass  untuk menyimpan username dan password
-    string nama1, nim1, nama2, nim2, nama3, nim3, prodi; // Mendeklarasikan variabel untuk data anggota kelompok dan program studi
+    string nama1, nim1, nama2, nim2, nama3, nim3, prodi, profesi; // Mendeklarasikan variabel untuk data anggota kelompok, program studi, dan profesi
     int usia, menu1, menu2; // Mendeklarasikan variabel usia dan menu1  serta  menu2  untuk opsi pilihan
 
     cout << "Masukan Username = "; // Menampilkan pesan untuk memasukkan username
@@ -86,7 +86,12 @@ int main() // Fungsi utama dari program yang dijalankan pertama kali
                     cout << endl;
                     cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
                 } else if (menu2 == 2 ){ // Mengecek apakah pilihan adalah 2 (Kerja)
-                    cout << "ANDA SEORANG PEKERJA." << endl;
+                    cout << "APA PEKERJAAN ANDA ? ";  // Menampilkan pesan untuk pekerjaan
+                    cin >> profesi; // menerima input pekerjaan
+
+                    cout << endl;
+
+                    cout << "ANDA SEKARANG BEKERJA SEBAGAI " << profesi << "." << endl; // menampilkan output pekerjaan
                     cout << endl;
                     cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
                 } else { // Menangani pilihan yang tidak sesuai
