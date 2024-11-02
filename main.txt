@@ -16,7 +16,7 @@ int main()
     if (user == "Kelompok") {
         if (pass == "7") {
             // full source code
-            string nama1, nim1, nama2, nim2, nama3, nim3, prodi;
+            string nama1, nim1, nama2, nim2, nama3, nim3, prodi, profesi;
             int usia, menu1, menu2;
 
             cout << "KELOMPOK 7" << endl;
@@ -87,7 +87,12 @@ int main()
                     cout << endl;
                     cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
                 } else if (menu2 == 2 ){
-                    cout << "ANDA SEORANG PEKERJA." << endl;
+                    cout << "APA PEKERJAAN ANDA ? ";
+                    cin >> profesi;
+
+                    cout << endl;
+
+                    cout << "ANDA SEKARANG BEKERJA SEBAGAI " << profesi << "." << endl;
                     cout << endl;
                     cout << "KEGAGALAN ADALAH BAGIAN DARI KESUKSESAN.";
                 } else {
